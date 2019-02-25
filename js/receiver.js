@@ -36,7 +36,7 @@ playerManager.setMessageInterceptor(
         }
 
         // Fetch content repository by requested contentId
-        makeRequest('GET', 'https://tse-summit.firebaseio.com/content.json?orderBy=%22$key%22&equalTo=%22'+ request.media.contentId + '%22')
+        makeRequest('GET', request.media.contentId)
           .then(function (data) {
 	          var item = data[request.media.contentId];
 	          if(!item) {
