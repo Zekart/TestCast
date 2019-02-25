@@ -28,7 +28,7 @@ playerManager.setMessageInterceptor(
       console.log("Intercepting LOAD request")
       return new Promise((resolve, reject) => {
         // Fetch content repository by requested contentId
-        makeRequest('GET', 'https://tse-summit.firebaseio.com/content.json?orderBy=%22$key%22&equalTo=%22'+ request.media.contentId + '%22').then(function (data) {
+        makeRequest('GET', 'http://rtmp.cdn.ua/1zahid.com_live/_definst_/livestream/playlist.m3u8').then(function (data) {
           var item = data[request.media.contentId];
           if(!item) {
             // Content could not be found in repository
