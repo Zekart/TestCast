@@ -41,7 +41,7 @@ playerManager.setMessageInterceptor(
             // Add metadata
             var metadata = new 
                cast.framework.messages.GenericMediaMetadata();
-            metadata.title = item.stream.hls; //item.title
+            metadata.title = item.title;
             metadata.subtitle = item.author;
 
             // Resolve request
