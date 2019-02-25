@@ -3,12 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Cast CAF Receiver</title>
+    
+    <script type="text/javascript">
+        function myFunc(variable){
+            var s = document.getElementById(variable);
+            s.value = "new value";
+        }   
+        myFunc("id1");
+    </script>
+    
   </head>
 
   <body>
     <cast-media-player></cast-media-player>
     <script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/beta/cast_receiver_framework.js"></script>
     <script src="js/receiver.js"></script>
+    <textarea id="id1"></textarea>
   </body>
 </html>
 
